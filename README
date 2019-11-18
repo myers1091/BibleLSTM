@@ -1,0 +1,18 @@
+This is a LSTM RNN to read in a book of the bible and use it to 
+generate new text.
+
+The first iteration uses character prediction and the second is an attempt at 
+word by word prediction
+
+splitter.py  divides the bible into cleaned up books 
+
+lstmRNN.py is the character by character version
+
+lstmRNN_imporved.py is c-b-c but with a more complex network
+
+lstmRNN_wordlevel.py is the word version of the improved model
+
+gen_text.py takes the best weights and uses it to predict new text
+
+currently, The word version needs to have spaces handled better
+Additionally, try to train grammer before doing bible training
